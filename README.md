@@ -6,9 +6,12 @@ A MERN stack application using the Google Books API for dynamically rendered sea
 
 # Install
 
-Run `npm i` to install dependencies.
+Run `npm run install:all` to install dependencies for the root, client, and server.
 
-Start local server with `npm start`.
+You need a local MongoDB instance running (the server connects via `server/config/connection.js`).
 
-or visit https://books-a-million.herokuapp.com/.
+# Run
+
+- `npm run dev` — starts the React client (port 3000) and the Express/GraphQL server (port 3001) together.
+- `npm run build && npm start` — builds the client and serves it from the Express server in production mode.
 
